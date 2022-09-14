@@ -825,6 +825,8 @@ interface btHingeConstraint {
   void setMaxMotorImpulse(float maxMotorImpulse);
   //void setMotorTarget([Const,Ref] btQuaternion qAinB, float dt);
   void setMotorTarget(float targetAngle, float dt);
+
+  float getHingeAngle();
 };
 btHingeConstraint implements btTypedConstraint;
 
